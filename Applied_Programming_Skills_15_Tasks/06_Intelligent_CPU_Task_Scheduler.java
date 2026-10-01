@@ -1,0 +1,5 @@
+import java.util.*;
+public class Intelligent_CPU_Task_Scheduler {
+ static class Task{char name;int count,readyTime;Task(char n,int c,int r){name=n;count=c;readyTime=r;}}
+ public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt(),k=sc.nextInt();HashMap<Character,Integer> f=new HashMap<>();for(int i=0;i<n;i++){char c=sc.next().charAt(0);f.put(c,f.getOrDefault(c,0)+1);}PriorityQueue<Task> pq=new PriorityQueue<>((a,b)->b.count-a.count);for(var e:f.entrySet())pq.offer(new Task(e.getKey(),e.getValue(),0));Queue<Task> cool=new LinkedList<>();int time=0,done=0;while(done<n){while(!cool.isEmpty()&&cool.peek().readyTime<=time)pq.offer(cool.poll());if(!pq.isEmpty()){Task t=pq.poll();t.count--;done++;if(t.count>0){t.readyTime=time+k+1;cool.offer(t);}time++;}else time=cool.peek().readyTime;}System.out.println(time);}
+}

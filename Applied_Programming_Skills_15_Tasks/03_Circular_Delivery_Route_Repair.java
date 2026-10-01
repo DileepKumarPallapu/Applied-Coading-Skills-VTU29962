@@ -1,0 +1,7 @@
+import java.util.*;
+public class Circular_Delivery_Route_Repair {
+ static class Node{int data;Node next;Node(int d){data=d;}}
+ static void removeCycle(Node head){Node slow=head,fast=head;while(fast!=null&&fast.next!=null){slow=slow.next;fast=fast.next.next;if(slow==fast){slow=head;if(slow==fast){while(fast.next!=slow)fast=fast.next;}else{while(slow.next!=fast.next){slow=slow.next;fast=fast.next;}}fast.next=null;return;}}}
+ static Node reverseKGroup(Node head,int k){Node cur=head,newHead=null,prevGroup=null;while(cur!=null){Node check=cur;int count=0;while(check!=null&&count<k){check=check.next;count++;}Node groupEnd=cur,prev=check;for(int i=0;i<count;i++){Node next=cur.next;cur.next=prev;prev=cur;cur=next;}if(newHead==null)newHead=prev;if(prevGroup!=null)prevGroup.next=prev;prevGroup=groupEnd;}return newHead;}
+ public static void main(String[] args){Scanner sc=new Scanner(System.in);int n=sc.nextInt(),k=sc.nextInt();Node head=null,tail=null;Node[] nodes=new Node[n];for(int i=0;i<n;i++){nodes[i]=new Node(sc.nextInt());if(head==null)head=nodes[i];else tail.next=nodes[i];tail=nodes[i];}int pos=sc.nextInt();if(pos!=-1)tail.next=nodes[pos];removeCycle(head);head=reverseKGroup(head,k);for(Node c=head;c!=null;c=c.next){System.out.print(c.data);if(c.next!=null)System.out.print(" ");}}
+}
