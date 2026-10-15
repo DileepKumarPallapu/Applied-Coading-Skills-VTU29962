@@ -1,0 +1,26 @@
+Week 9 Unit 5
+========================================
+
+Task 71: Majority Element
+Filename: Task_71_Majority_Element.java
+
+Task 72: Reverse Bits
+Filename: Task_72_Reverse_Bits.java
+
+Task 73: Longest Nice Substring
+Filename: Task_73_Longest_Nice_Substring.java
+
+Task 74: Count of Smaller Numbers After Self
+Filename: Task_74_Count_of_Smaller_Numbers_After_Self.java
+
+Task 75: K Closest Points to Origin
+Filename: Task_75_K_Closest_Points_to_Origin.java
+
+Task 76: Climbing Stairs
+Filename: Task_76_Climbing_Stairs.java
+
+Task 77: House Robber
+Filename: Task_77_House_Robber.java
+
+Task 78: Min Cost Climbing Stairs
+Filename: Task_78_Min_Cost_Climbing_Stairs.java
