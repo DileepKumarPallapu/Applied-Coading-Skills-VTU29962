@@ -1,0 +1,30 @@
+Week 5 Unit 3
+============================================
+
+Task 37: Same Tree
+Filename: Task_37_Same_Tree.java
+
+Task 38: Symmetric Tree
+Filename: Task_38_Symmetric_Tree.java
+
+Task 39: Binary Tree Inorder Traversal
+Filename: Task_39_Binary_Tree_Inorder_Traversal.java
+
+Task 40: Binary Tree Preorder Traversal
+Filename: Task_40_Binary_Tree_Preorder_Traversal.java
+
+Task 41: Binary Tree Postorder Traversal
+Filename: Task_41_Binary_Tree_Postorder_Traversal.java
+
+Task 42: Vertical Order Traversal of a Binary Tree
+Filename: Task_42_Vertical_Order_Traversal_of_a_Binary_Tree.java
+
+Task 43: Path Sum
+Filename: Task_43_Path_Sum.java
+
+Task 44: Path Sum II
+Filename: Task_44_Path_Sum_II.java
+
+Task 45: Binary Tree Paths
+Filename: Task_45_Binary_Tree_Paths.java
+
